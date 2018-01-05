@@ -25,10 +25,11 @@ def get_online_friends(login, password):
     users_data = api.users.get(user_ids=user_ids)
     return users_data
 
+
 def output_friends_to_console(friends_online):
-    
     for friend in friends_online:
         print(friend['first_name'], friend['last_name'])
+
 
 if __name__ == '__main__':
     login = get_user_login()
